@@ -1,14 +1,15 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
-        int age = 15;
+        String studentFirstName = "Jimmy";
+        String studentLastName = "Fredette";
         double gpa = 3.45;
-        char firstInitial = 'K';
-        char lastInitial = 'H';
-        boolean perfectAttendance = false;
-        System.out.println(age);
         System.out.println(gpa);
-        System.out.println(firstInitial);
-        System.out.println(lastInitial);
-        System.out.println(perfectAttendance);
+        System.out.println(studentFirstName + " " + studentLastName + " has a GPA of " + gpa);
+        System.out.println("What do you want to update it to?");
+        Scanner input = new Scanner(System.in);
+        gpa = input.nextDouble();
+        System.out.println(studentFirstName + " " + studentLastName + " now has a GPA of " + gpa);
     }
 }
